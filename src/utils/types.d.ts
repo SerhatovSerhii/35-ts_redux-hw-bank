@@ -1,11 +1,10 @@
-
-
-export interface Stats{
+export interface RootState {
     balance: number
 }
 
+
 export interface Action{
     type: string
-    payload: number
+    payload: any
 }
 

@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 
 const Operation = () => {
     const [sum, setSum] = useState(0);
-    sum < 0 ? setSum(0) : sum
+    // sum < 0 ? setSum(0) : sum
     const dispatch = useDispatch();
 
     return (
@@ -17,6 +17,7 @@ const Operation = () => {
                 onChange={e => setSum(+e.target.value)}
                 type="number"
                 value={sum}
+                min={0}
             />
             <button className="btn btn-primary btn-lg"
                     onClick={() => dispatch(deposit(sum))}>Deposit</button>

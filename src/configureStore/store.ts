@@ -5,5 +5,4 @@ const initialState = {
     balance: 0
 }
 
-// export const store = createStore(accountReducer, initialState);
 export const store = createStore(accountReducer, initialState);

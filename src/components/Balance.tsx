@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
-import { Stats } from "../utils/types";
+import { RootState } from "../utils/types";
 
 
 const Balance = () => {
-const balance = useSelector<Stats, number>(state => state.balance);
+const balance = useSelector<RootState, number>(state => state.balance);
 
   return (
     <div className="text-center text-uppercase">
